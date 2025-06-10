@@ -1,12 +1,14 @@
-import React from 'react'
+import '../styles/checkList.css'  
 
 const CheckList = () => {
   return (
-    <div className='checklist-main'>
-        <p>✅  Acces to 100+ GAMES for FREE thanks to ads</p>
-        <p>✅  Log In Across All Yous Devices </p>
-        <p>✅  Skip the Line with Cutomer Support</p>
-    </div>
+    <div className="checklist-main">
+    <ul>
+      <li> Access to 100+ GAMES for FREE thanks <br />to ads</li>
+      <li>Log In Across All Your Devices</li>
+      <li> Skip the Line with Customer Support</li>
+    </ul>
+  </div>
   )
 }
 

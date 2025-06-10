@@ -128,6 +128,18 @@ const server = http.createServer((req, res) => {
   const path = parsedUrl.pathname;
   const query = parsedUrl.query;
 
+  // 👉  headers CORS 
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // 👉  OPTIONS (preflight)
+  if (method === 'OPTIONS') {
+    res.writeHead(204); // No Content
+    res.end();
+    return;
+  }
+
   let rawBody = '';
   req.on('data', chunk => {
     rawBody += chunk.toString();
