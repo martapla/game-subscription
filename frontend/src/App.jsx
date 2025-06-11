@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Step1 />} />
         <Route path="/verify" element={<Step2 />} />
-        <Route path="/choose-plan" element={<Step3 />} />
+        <Route path="/products" element={<Step3 />} />
         <Route path="/success" element={<Step4 />} />
       </Routes>
     </Router>

@@ -1,35 +1,53 @@
 .step1-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.input-email,
+.btn-connect {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.input-email {
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.error {
+  color: red;
+}
+
+.form-section {
+  border-radius: 8px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .step1-main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-    gap: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
   }
 
-  .input-email, .btn-connect {
-    width: 90%;
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .services-privacy{
-    font-size: 12px;
-    text-decoration: none;
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-    line-height: 1.9;
-  }
-
-  a {
-    color: #5bb6dd;
-    text-decoration: none;
-  }
-
-  .error {
-    color:red;
-  }
+}

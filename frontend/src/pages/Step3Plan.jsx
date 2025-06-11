@@ -2,7 +2,12 @@ import React from 'react'
 
 const Step3Plan = () => {
   return (
-    <div>Step3Plan</div>
+    <div className="step1-main">
+
+      <div className="header-section">
+        <h2> Choose your Plan</h2>
+      </div>
+    </div>
   )
 }
 

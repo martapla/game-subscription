@@ -1,0 +1,67 @@
+.step2-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.input-code,
+.btn-verify {
+    width: 90%;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.btn-verify {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.email-highlight {
+    color: #5bdd8f;
+    font-weight: 600;
+}
+
+
+.error {
+    color: red;
+}
+
+.form-section {
+    border-radius: 8px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media (min-width: 768px) {
+    .step2-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 150px;
+    }
+
+}

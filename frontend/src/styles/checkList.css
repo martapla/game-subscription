@@ -1,27 +1,48 @@
 .checklist-main {
-    background-color: #312f67;
     color: white;
-    border: 1px solid #b0a0dc;
-    padding: 20px;
     font-size: 14px;
     text-align: left;
-  }
-  
-  .checklist-main ul {
+}
+
+.checklist-main ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-  }
-  
-  .checklist-main li {
+}
+
+.checklist-main li {
+    
     line-height: 1.6;
+    padding: 12px;
   }
 
   .checklist-main li::before {
     content: '✅';
     margin-right: 8px;
   }
+
+  .checklist-main li:first-child,
+  .checklist-main li:last-child {
+  background: linear-gradient(90deg, #633a6d, #3b2b55);
+}
+
+  .checklist-desktop-position {
+    display: none;
+  }
   
+  .checklist-mobile-position {
+    display: block;
+  }
+  
+
+  @media (min-width: 768px) {
+    .checklist-desktop-position {
+      display: block;
+    }
+  
+    .checklist-mobile-position {
+      display: none;
+    }
+  }
